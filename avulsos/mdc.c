@@ -1,3 +1,8 @@
+/* Programa simples para calculo do MDC
+ * até o momento de dois números
+ * implementação continua
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 
