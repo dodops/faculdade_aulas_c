@@ -20,8 +20,8 @@ int main(void)
     const int daysPerMonth[12] = { 31, 28, 31, 30, 31, 30,
                                     31, 31, 30, 31, 30 , 31 };
 
-    printf("Digite a data de hoje (mm/dd/aaaa): \n");
-    scanf("%i%i%i", &today.month, &today.day, &today.year);
+    printf("Digite a data de hoje (dd/mm/aaaa): \n");
+    scanf("%i%i%i", &today.day, &today.month, &today.year);
 
     if (today.day != daysPerMonth[today.month - 1]){
         tomorrow.day = today.day + 1;
@@ -41,8 +41,8 @@ int main(void)
         tomorrow.year = today.year;
     }
 
-    printf("A data de amanhã é dia: %i/%i/%.2i.\n", tomorrow.month,
-            tomorrow.day, tomorrow.year);
+    printf("A data de amanhã é dia: %.2i/%.2i/%i.\n", tomorrow.day,
+            tomorrow.month, tomorrow.year);
 
     return 0;
 }
